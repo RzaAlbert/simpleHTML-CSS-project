@@ -1,0 +1,307 @@
+.opis{
+    display: none;
+}
+.przycisk:hover > .visible{
+    display: none;
+}
+.container:hover > .hidden{
+    display: block;
+	background-color: #ffffff;
+}
+#kontener{
+	display:flex;
+	 flex-wrap: wrap;
+	flex-direction:column;
+	background-color: #F2A413;
+	width: 90%;
+	margin: 0 auto;
+
+}
+body {
+background: #8C5F0B;
+color:#0D0D0D;
+}
+
+h1, footer{
+	margin:0;
+	background:#F2A413;
+	color: #0D0D0D;
+	text-align:center;
+	
+}
+h2{
+	text-align: center;
+}
+
+#menu {
+background:#F2BB16;
+width: 100%;
+padding:1%;
+float:left;
+margin:0;
+padding: 0;
+border-bottom: 2px solid #0000a0;
+}
+#menu li{
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 3px;
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 85%;
+
+}
+#menu a{
+
+	float:left;
+	display:block;
+	margin:0;
+	padding:4px 8px;
+	color:#0D0D0D;
+	text-decoration:none;
+	border: 1px solid
+	#0000c6;
+	border-bottom:none;
+	background:#F2BB16;
+	}
+	#menu a:hover {
+	background:#F2BB16;
+	color:#0D0D0D;
+	text-decoration:none;
+	}
+#tresc{
+	flex-direction:column;
+	flex: 75%;
+	padding:1%;
+	background:#F2BB16;
+	font-size:125%;
+}
+
+  
+.column {
+	float: left;
+	width: 18%;
+	padding: 1%;
+  }
+#main{
+	display:flex ;
+	flex-direction:row;
+}
+
+footer {
+	clear:both;
+	width: 100%;
+	padding: 5px 0 5px 0;
+	text-align: center;
+}
+label{
+	color:#0D0D0D;
+}
+
+.box {
+	flex-wrap: wrap;
+	background:#F2BB16;
+	color:#0D0D0D;
+	padding:5px;
+	margin:5px;
+	font-size:90%;
+	text-align:center;
+}
+	/* hiperłącza w elementach klasy box*/
+.box a{
+		color:#0D0D0D;
+			width:100%;
+
+}
+.box ul{
+		flex:100%;
+		padding:1px;
+		text-align:center;
+}
+
+aside {
+		flex: 20%;
+		padding:1%;
+		box-sizing:border-box;
+		display:flex;
+		flex-direction: column;
+		text-align:center;
+		
+}
+
+
+
+
+section { clear:both;}
+img { max-width: 100%; height: auto; border-radius:10px; }
+
+.slajd {
+float:left;
+display:block;
+width:13%;
+text-align:center;
+border-radius:10px;
+background:#F2BB16;
+padding:1% 0.5%;
+margin:1%;
+background:#8C5F0B;
+ transition-duration: 3s;
+}
+
+
+footer { clear:both; }
+.galeria{ margin:auto; width:90%;}
+
+
+
+
+table{
+background:#F2E205;
+text-align:center;
+width:94%;
+margin:2%;
+border:1pt solid #000040;
+}
+ tbody tr:nth-child(2n+1){
+ background:#ffffff;
+}
+caption{
+	font-weight: bold;
+	font-size: 120%;
+	color:#0D0D0D;
+}
+thead, #table-foot{
+	background:#F2E205;
+	color:#0D0D0D;
+	font-size:110%;
+	padding:5pt;
+}
+
+th,td{
+border:1pt solid #000040;
+}
+
+#table-foot a {
+color:#0D0D0D;
+}
+
+
+
+
+nav{
+ text-align: left;
+ overflow: hidden;
+ font-family: calibri, tahoma;
+}
+nav div{
+	  box-sizing: border-box;
+		margin:0;
+}
+
+nav ul{
+	 display: flex;
+	 flex-direction: row;
+	 padding:0;
+	 border-radius: 25px;
+}
+nav ul li {
+	
+
+ margin:0;
+ border: 3px solid #0D0D0D;
+ list-style-type: none;
+ background: #8C5F0B;
+ flex-grow: 2;
+  border-radius: 25px;
+}
+nav ul li:hover {
+	  border-radius: 25px;
+ border: 1px solid #d5d5d5;
+ 
+ list-style-type: none;
+
+ background: #F2BB16;
+
+}
+nav ul li:hover a{
+color:#0D0D0D;
+}
+nav ul li a {
+ display : block;
+padding:10pt;
+ text-decoration : none;
+ font-size:150%;
+ text-align:center;
+}
+nav ul li li a {
+ width: 160px;
+ 
+}
+nav ul li li:hover {
+ background:#F2BB16 ;
+}
+nav ul li ul {
+ overflow: hidden;
+ display: none;
+}
+nav ul li:hover ul {
+ position: absolute;
+ background: #aaa;
+ padding: 0;
+ display: block;
+ width: 177px;
+box-shadow: 0 0 1em gold;
+}
+
+
+
+
+
+.slajd:hover { 
+	background:#8C5F0B;
+	transform: rotate(0.5turn);
+    -webkit-transform: rotate(0.5turn);
+    -moz-transform: rotate(0.5turn);
+    z-index: 0;
+    box-shadow: 5px 10px 15px #888888;
+
+	}
+
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 580px) {
+ 
+  nav ul {
+    flex-direction: column;
+  }
+  #main{
+	  flex-direction:column;
+  }
+    .slajd
+      {
+          text-align: center;
+          width: 100%;
+      }
+}
+
+@media only screen and (min-width : 720px)
+and (max-width : 1800px)
+and (orientation : landscape)
+{
+    body{
+        color: red;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>  Formularze</title>
+                    <link rel="stylesheet" href="./style.css" type="text/css" />
+</head>
+<div id="kontener">
+    <header>
+        <h1>Formularze</h1>
+      <nav>
+			<div>
+				<ul>
+				<li><a href="index.html">Podstawy</a></li>
+				<li><a href="tabele.html">Tabele</a></li>
+				<li><a href="">Formularze</a>
+				<ul>
+				<li><a href="formularze.html" >Pola formularza</a></li>
+				<li><a href="obliczenia.html" >Obliczenia w formularzu</a></li>
+				</ul>
+				</li>
+				<li><a href="galeria.html" title="">Galeria</a></li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+	<div id="main">
+    <section id="tresc">
+                        <h2>Podstawowe znaczniki formularza HTML to:</h2>
+                        <ul>
+                            <li> &lt;form&gt; -  </li>
+                            <li> &lt;input&gt; -  </li>
+                            <li> &lt;select&gt; - pole formularza typu lista rozwijana</li>
+                            <li> &lt;textarea&gt; - pole formularza typu obszar tekstowy </li>
+                            <li> &lt;button&gt; - pole formularza typu przycisk </li>
+                        </ul>
+
+                        <h2>Przykladowy formularz HMTL:</h2>
+                            <form action="mailto:dawid@cs.pollub.pl" method="post">
+                                <label>Nazwisko:
+                                    <input type="text" name="nazwisko" pattern="" title="Wpisz nazwisko" required/> <br/>
+                                </label>
+                                <label>Wiek:
+                                    <input type="number" min=1 max =125 name="wiek" required/><br/><br/>
+                                </label>
+                                <label>Państwo:</label>
+                                <select name="panstwo" required>
+                                    <option value ="polska">Polska</option>
+                                    <option value="niemcy">Niemcy</option>
+                                    <option value="wlochy">Włochy</option>
+                                    <option value="hiszpania">Hiszpania</option>
+                                </select>
+                                <br/><br/><!-- comment -->
+
+                                <label> Adres e-mail:
+                                    <input type="email" name="email" required placeholder="example@gmail.com"/></label>
+                                <br/><br/><!-- comment -->
+                                <h3>Zamawiam tutorial z języka:</h3><!-- comment --><br/><!-- comment -->
+                                <input type="checkbox" name="jezyk" value="php"/> PHP
+                                <input type="checkbox" name="jezyk" value="java"/> Java <!-- comment -->
+                                <input type="checkbox" name="jezyk" value ="c"/> C <br/>
+
+                                <label>Sposób zapłaty></label>
+                                <input type="radio" name="platnosc"/>eurocard
+                                <input type="radio" name="platnosc"/>visa
+                                <input type="radio" name="platnosc"/> przelew bankowy <br/><br/>
+                                <button type="submit" name="wyslij" value="wyslano"> Wyslij </button>
+                                <button type="submit" name ="anuluj" value="anulowano"> Anuluj </button>
+                            </form>
+    </section>
+                    <aside>
+                        <div class="box">
+                            <h3>Walidatory:</h3>
+                            <ul>
+                                <li> <a href="http://validator.w3.org/">HTML </a></li>
+                                <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+                            </ul>
+                        </div>
+                        <div class="box">
+                            <h3>Kursy:</h3>
+                            <ul>
+                                <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                                <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                                <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                                <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                            </ul>
+                        </div>
+                    </aside>
+					</div>
+                    <footer>
+                        &copy;BP
+                    </footer>
+</div>
+                </body>
+                </html>
